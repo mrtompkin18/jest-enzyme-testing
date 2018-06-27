@@ -51,7 +51,7 @@ class TodoList extends React.Component {
         if (item.isEdit) {
             return (<Input defaultValue={item.task} onChange={this.onEditTaskChange} />)
         } else {
-            return <div style={{ marginTop: 6, marginLeft: 12 }}>{item.task}</div>
+            return <div id="taskText" style={{ marginTop: 6, marginLeft: 12 }}>{item.task}</div>
         }
     }
 
@@ -62,7 +62,7 @@ class TodoList extends React.Component {
                     <Col
                         span={2}
                         style={{ fontWeight: 'Bold' }}>
-                        #{item.taskId}
+                        <div id="taskId">#{item.taskId}</div>
                     </Col>
                     <Col span={16}>
                         {this.renderText(item)}

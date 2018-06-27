@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todos Testing matches snapshot 1`] = `
+<div
+  className="ant-card ant-card-bordered"
+>
+  <div
+    className="ant-card-head"
+  >
+    <div
+      className="ant-card-head-wrapper"
+    >
+      <div
+        className="ant-card-head-title"
+      >
+        Jest Enzyme
+      </div>
+    </div>
+  </div>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  >
+    <div
+      className="ant-row"
+      style={
+        Object {
+          "marginLeft": -4,
+          "marginRight": -4,
+        }
+      }
+    >
+      <div
+        className="ant-col-22"
+        style={
+          Object {
+            "paddingLeft": 4,
+            "paddingRight": 4,
+          }
+        }
+      >
+        <input
+          className="ant-input ant-input-lg"
+          disabled={false}
+          id="task"
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          placeholder="Please input your task"
+          size="large"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="ant-col-2"
+        style={
+          Object {
+            "paddingLeft": 4,
+            "paddingRight": 4,
+          }
+        }
+      >
+        <button
+          className="ant-btn ant-btn-lg"
+          id="addButton"
+          onClick={[Function]}
+          style={
+            Object {
+              "float": "right",
+              "width": "100%",
+            }
+          }
+          type="button"
+        >
+          <span>
+            Add
+          </span>
+        </button>
+      </div>
+    </div>
+    <div>
+      <br />
+      <div
+        className="ant-list ant-list-split"
+      >
+        <div
+          className="ant-spin-nested-loading"
+          style={null}
+        >
+          <div
+            className="ant-spin-container"
+          >
+            <div
+              className="ant-list-item"
+            >
+              <div
+                className="ant-list-item-content ant-list-item-content-single"
+              >
+                <div
+                  className="ant-row"
+                  style={
+                    Object {
+                      "marginLeft": -4,
+                      "marginRight": -4,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <div
+                    className="ant-col-2"
+                    style={
+                      Object {
+                        "fontWeight": "Bold",
+                        "paddingLeft": 4,
+                        "paddingRight": 4,
+                      }
+                    }
+                  >
+                    <div
+                      id="taskId"
+                    >
+                      #
+                      1
+                    </div>
+                  </div>
+                  <div
+                    className="ant-col-16"
+                    style={
+                      Object {
+                        "paddingLeft": 4,
+                        "paddingRight": 4,
+                      }
+                    }
+                  >
+                    <div
+                      id="taskText"
+                      style={
+                        Object {
+                          "marginLeft": 12,
+                          "marginTop": 6,
+                        }
+                      }
+                    >
+                      Go to Home
+                    </div>
+                  </div>
+                  <div
+                    className="ant-col-6"
+                    style={
+                      Object {
+                        "paddingLeft": 4,
+                        "paddingRight": 4,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "float": "right",
+                        }
+                      }
+                    >
+                      <button
+                        className="ant-btn"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "marginRight": 7,
+                          }
+                        }
+                        type="button"
+                      >
+                        <span>
+                          edit
+                        </span>
+                      </button>
+                      <button
+                        className="ant-btn"
+                        disabled={false}
+                        onClick={[Function]}
+                        type="button"
+                      >
+                        <span>
+                          delete
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -7,14 +7,18 @@ class Todo extends React.Component {
             <Row gutter={8} >
                 <Col span={22}>
                     <Input
-                        size="large"
                         id="task"
+                        size="large"
                         placeholder="Please input your task"
                         value={input}
                         onChange={onInputChange} />
                 </Col>
                 <Col span={2}>
-                    <Button size="large" onClick={addTask} style={{ width: '100%', float: 'right' }}>
+                    <Button
+                        id="addButton"
+                        size="large"
+                        onClick={addTask}
+                        style={{ width: '100%', float: 'right' }}>
                         Add
                     </Button>
                 </Col>

@@ -1,17 +1,19 @@
-import Enzyme from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import { shallow } from 'enzyme';
-import TodoList from '../src/containers/TodoList'
-import Todo from '../src/containers/Todo'
+import React from 'react'
+import Adapter from 'enzyme-adapter-react-16'
+import renderer from 'react-test-renderer'
+import { configure } from 'enzyme'
+import { shallow } from 'enzyme'
+import App from './containers/App'
 
-Enzyme.configure({ adapter: new Adapter() });
+configure({ adapter: new Adapter() });
+describe('Todos Testing', () => {
+  it('start taskId with 1 ', () => {
+    const wrap = shallow(<App />)
+    expect(wrap.state().id).toEqual(1)
+  })
 
-describe('Check values in state', () => {
-  it('start taskId with 1', () => {
-    const wrapper = shallow(<Todo />)
-    const taskId = wrapper.state().todos.id
-    expect(taskId).toEqual(1)
+  it('matches snapshot', () => {
+    const tree = renderer.create(<App />).toJSON()
+    expect(tree).toMatchSnapshot()
   })
 })
-
-
